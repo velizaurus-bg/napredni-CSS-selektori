@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Napredni CSS selektori</title>
+
+<style>
+
+a[href^="https://www.google.com"] {
+
+color: green;
+
+}
+
+a[href="_blank"] {
+
+color: red;
+}
+
+p:nth-child(8) {
+
+    color: blue;
+}
+
+p:nth-child(8):hover {
+
+    font-style: italic;
+}
+
+p::after {
+
+content: " -NEW";
+color: yellow;
+
+}
+
+
+p:nth-of-type(odd) {
+
+color: red;
+
+}
+
+p:nth-of-type(even) {
+
+color: blue;
+
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+    <h1>Main Heading</h1>
+
+    <p>Paragraph 1</p>
+
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu/" target="_blank">Go to Link Group</a>
+    
+    <div id="first-div">
+
+        <h2>Subheading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+
+        <div id="second-div">
+
+            <h3>Sub subheading</h3>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
+
+        </div> 
+
+    </div> 
+
+    <p>Paragraph 9</p>
+    <p>Paragraph 10</p>
+
+</body>
+
+</html>
